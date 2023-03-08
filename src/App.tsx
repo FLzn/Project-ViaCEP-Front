@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { FaSearch } from 'react-icons/fa';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="search-box">
+      <h1 className="title">Projeto ViaCEP</h1>
+      <form>
+        <div className='teste'>
+          <FaSearch className='icon'/>
+          <input type="text" placeholder="Pesquisar..." />
+        </div>
+        <br />
+        <button type="submit">
+          Buscar
+        </button>
+      </form>
     </div>
   );
 }
